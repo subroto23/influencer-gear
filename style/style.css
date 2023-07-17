@@ -4,7 +4,227 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* Variable Declear */
+:root {
+  --primary-color: #3a3a3a;
+  --secoundry-color: #e02c6d;
+  --white-color: #fff;
+  --section-title-color: #0a0826;
+  --section-description-color: #6c6c6c;
+  --product-title-color: #18191f;
+  --product-amount-color: rgba(0, 0, 0, 0.87);
+  --product-info-color: #787885;
+}
 /* Shared Style  */
 body {
   font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+}
+.btn-primary {
+  border-radius: 41px;
+  background: var(--secoundry-color);
+  padding: 10px 24px;
+  color: var(--white-color);
+  font-weight: 700;
+  border: 0;
+}
+.header-container {
+  margin: 85px 120px;
+}
+/* header related style */
+/* Nav Related Styles */
+.logo {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+nav ul {
+  display: flex;
+  gap: 3vw;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: var(--nav-color);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Banner Related Style */
+.banner-section {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+.banner-title {
+  width: 582px;
+  color: var(--primary-color);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.banner-description {
+  width: 505px;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+/* Banner Image Related Style */
+.banner-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-images-container {
+  background-image: url("../images/Circle\ design.svg");
+  max-width: 440px;
+}
+
+/* Sponsers Related Style */
+.sponsers-container {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Popular Collection Related Style */
+.popular-container {
+  margin: 100px 200px;
+}
+.text-popular-collection {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.card-body {
+  padding: 15px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card body img {
+  border-radius: 5px;
+}
+.product-title {
+  color: var(--product-title-color);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+.product-amount {
+  color: var(--product-amount-color);
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 6px;
+}
+.card-body div span {
+  color: #fb8200;
+  margin-bottom: 4px;
+}
+.product-info {
+  color: var(--product-info-color);
+  font-family: "Inte" r;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 0.252px;
+}
+.see-more-link {
+  margin-top: 50px;
+  text-align: right;
+}
+.see-more-link a {
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.card-body:hover {
+  border: 2px solid var(--secoundry-color);
+}
+
+/* Features Section Related Style */
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+  padding: 0px 165px;
+}
+.features-container div {
+  border-radius: 7px;
+}
+.featured-content h1 {
+  color: var(--section-title-color);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.featured-content p {
+  max-width: 500px;
+  color: var(--section-description-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 5px 0px;
+}
+.featured-content button {
+  padding: 10px 24px;
+  background: var(--secoundry-color);
+  color: var(--white-color);
+  border: 0;
+  margin-top: 6px;
+}
+/* Footer Related Style */
+footer {
+  background: #0a0826;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+footer h1 {
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+footer > p {
+  color: #d9dbe1;
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 3px 0;
+}
+footer div {
+  margin-top: 15px;
+  color: var(--white-color);
+}
+footer div span {
+  margin-right: 16px;
 }
