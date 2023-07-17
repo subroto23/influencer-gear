@@ -67,14 +67,14 @@ nav ul li a {
   gap: 130px;
 }
 .banner-title {
-  width: 582px;
+  max-width: 582px;
   color: var(--primary-color);
   font-size: 52px;
   font-weight: 700;
   line-height: 70px;
 }
 .banner-description {
-  width: 505px;
+  max-width: 505px;
   color: var(--primary-color);
   font-size: 16px;
   font-weight: 600;
@@ -227,4 +227,105 @@ footer div {
 }
 footer div span {
   margin-right: 16px;
+}
+.hide {
+  display: none;
+}
+
+/* Responsive Style */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+  nav ul {
+    display: none;
+  }
+  .banner-section {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .header-container,
+  .banner-section,
+  .sponsers-container,
+  nav,
+  .popular-container,
+  .features-container,
+  footer {
+    padding: 15px;
+    margin: 0;
+  }
+  .sponsers-container img {
+    width: 10%;
+  }
+  .sponsers-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    gap: 40px;
+  }
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .features-img {
+    grid-area: img;
+  }
+  .content {
+    grid-area: content;
+  }
+  .features-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "img";
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 920px) {
+  nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .banner-section {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .header-container,
+  .banner-section,
+  .sponsers-container,
+  nav,
+  footer {
+    padding: 10px;
+    margin: 0;
+  }
+  .popular-container,
+  .features-container {
+    padding: 0 80px;
+    margin: 10px;
+  }
+  .sponsers-container img {
+    width: 10%;
+  }
+  .sponsers-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    gap: 30px;
+  }
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .features-img {
+    grid-area: img;
+  }
+  .content {
+    grid-area: content;
+  }
+  .features-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "img";
+    gap: 30px;
+  }
 }
