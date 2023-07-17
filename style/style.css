@@ -103,7 +103,7 @@ nav ul li a {
 
 /* Popular Collection Related Style */
 .popular-container {
-  margin: 100px 200px;
+  margin: 100px 100px;
 }
 .text-popular-collection {
   color: var(--primary-color);
